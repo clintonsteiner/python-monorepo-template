@@ -13,12 +13,11 @@ workspace = [
 dev = [
     "ruff>=0.4.0",
     "pytest>=7.4.0",
-    "pytest-cov>=4.1.0",
 ]
 
 [tool.pytest.ini_options]
 minversion = "7.0"
-addopts = "-v --cov=. --cov-report=term-local-skip=100"
+addopts = "-v "
 testpaths = ["packages"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
